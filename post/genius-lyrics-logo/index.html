@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Genius Lyrics Logo / Use genius.com api &#43; beautiful soup to get song lyrics and write them to a local text file. - Moteka</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="The social media team at genius posts on instagram up to 20 times per day.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Moteka" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Moteka</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Genius Lyrics Logo / Use genius.com api &#43; beautiful soup to get song lyrics and write them to a local text file.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<section>
+    <aside>
+        <a href="https://i.embed.ly/1/image?url=https%3A%2F%2Fcontent.screencast.com%2Fusers%2Fezrapgenius%2Ffolders%2FJing%2Fmedia%2F4cffad3c-153d-4e51-8766-7386899c6f69%2F00000268.png&amp;key=fc778e44915911e088ae4040f9f86dcd"><img alt="New Logo Genius 1,477,134 likes · 32,989 talking about this. new logo genius" src="https://i.embed.ly/1/image?url=https%3A%2F%2Fcontent.screencast.com%2Fusers%2Fezrapgenius%2Ffolders%2FJing%2Fmedia%2F4cffad3c-153d-4e51-8766-7386899c6f69%2F00000268.png&amp;key=fc778e44915911e088ae4040f9f86dcd" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThLMxVWOP_qMShsuymE4C6wxIkVPNfStTyDQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1216x107 - Python script for searching genius.com api. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1216x107</li> 
+    <mark>New Logo Genius </mark> The social media team at genius posts on instagram up to 20 times per day.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.imgur.com/8nRd0gO.jpg"><img alt="Deno Module For Genius Com Api And Lyrics Scraping &#039;axé&#039;, axé logo si no tiene logo, falta poco, saravaravá! morioh" src="https://i.imgur.com/8nRd0gO.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_sNl3kAeXTQajhRxQ5CkKVkVp1Q9skXy9KA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - This is going to be a shockingly easy tutorial that you can follow to collect song lyrics into a local.txt. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Deno Module For Genius Com Api And Lyrics Scraping </mark> Actually, you can&#039;t fetch lyrics with genius api.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/14/97/6d/14976db2-d0e8-6641-439e-b7b7f98f9c71/App_Store-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png"><img alt="å¨app Store ä¸ç Genius Song Lyrics More Browse thousands of lyrics logo brandcrowd logo maker is easy to use and allows you full customization to get the lyrics logo you. å¨app store ä¸ç genius song lyrics more" src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/14/97/6d/14976db2-d0e8-6641-439e-b7b7f98f9c71/App_Store-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4Pe9jvLrkvsuQxW7DUkv_mvHSOojbZMJ_w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x630 - Make a lyrics logo design online with brandcrowd&#039;s logo maker. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x630</li> 
+    <mark>在app Store 上的 Genius Song Lyrics More </mark> Genius png 10 free cliparts | download images on.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://dslv9ilpbe7p1.cloudfront.net/Ym0TxSzc_7sOfMQVJdQ6EQ_store_logo_image.png"><img alt="Genius 1200 x 630 jpeg 30 кб. genius" src="https://dslv9ilpbe7p1.cloudfront.net/Ym0TxSzc_7sOfMQVJdQ6EQ_store_logo_image.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaXkfWpCss32P2ccXsyGCv4SN1IwrKAlVl6Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2930x390 - 5 / 5 32 мнений. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2930x390</li> 
+    <mark>Genius </mark> Genius.com is a fun website.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://images.genius.com/2b5abd42a2a8031af5c46a9f77bdc63e.1920x1080x4.gif"><img alt="Tai72pqc76ob5m 1,477,134 likes · 32,989 talking about this. https genius com" src="https://images.genius.com/2b5abd42a2a8031af5c46a9f77bdc63e.1920x1080x4.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1YEULEzaOjooQ2jwGqPJyKqqy1XK2BPYM1Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x1080 - Submitted 1 year ago by felixatwood. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x1080</li> 
+    <mark>Tai72pqc76ob5m </mark> How to make a genius video | official tutorial.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://img.favpng.com/18/24/9/logo-brand-lyrics-png-favpng-1aqVcSF42tyjaV0rmYcfA2BT0.jpg"><img alt="Logo Brand Lyrics Png 530x500px Logo Bathing Ape Black And White Brand Genius Download Free Or hold your phone up to the music, tap the soundwave button (powered by acrcloud), and lo, the annotated lyrics appear. favpng com" src="https://img.favpng.com/18/24/9/logo-brand-lyrics-png-favpng-1aqVcSF42tyjaV0rmYcfA2BT0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRBM6OzhnCpZSbkr358Krs597eH5cqSImqw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>820x500 - Or hold your phone up to the music, tap the soundwave button (powered by acrcloud), and lo, the annotated lyrics appear. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 820x500</li> 
+    <mark>Logo Brand Lyrics Png 530x500px Logo Bathing Ape Black And White Brand Genius Download Free </mark> (coro) generation logo.&#039;até&#039;, até logo todo tiene logo.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.rollingstone.com/wp-content/uploads/2019/06/genius.png"><img alt="Genius Claims Google Stole Lyrics Embedded With Secret Morse Code Rolling Stone See actions taken by the people who manage and post content. genius claims google stole lyrics" src="https://www.rollingstone.com/wp-content/uploads/2019/06/genius.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI23CiYKi0VHsC_P7a8D5Mgv66ysR0vKTGCQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x630 - Kamzel] x2 nie słucham się was, idę ciągle swoją drogą nie wiem, co tam ubierasz, nie patrzę tobie na logo zamiast coś robić. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x630</li> 
+    <mark>Genius Claims Google Stole Lyrics Embedded With Secret Morse Code Rolling Stone </mark> Let genius match lyrics with your songs on your favorite music services.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.musicweek.com/cimages/a5467530679a868828ae38c5e4f96ced.png"><img alt="Music Week Jak korzystać z rap genius?jak tworzyć własne adnotacje? music week" src="https://www.musicweek.com/cimages/a5467530679a868828ae38c5e4f96ced.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIvmaQfeYwZYn8U3HpoRaeYjPwWGUt4PJMBw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>648x396 - Lyric reels featured charts videos shop. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 648x396</li> 
+    <mark>Music Week </mark> 1,477,134 likes · 32,989 talking about this.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://static.hiphopdx.com/2016/01/Spotify-Genius-Behind-The-Lyrics.png"><img alt="Spotify X Genius Announce Behind The Lyrics Hiphopdx Lyric reels featured charts videos shop. spotify x genius announce behind the" src="https://static.hiphopdx.com/2016/01/Spotify-Genius-Behind-The-Lyrics.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeWKgepRXfmt89r8F7U6cFK4ET-4GFv68R1Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>623x623 - Genius png 10 free cliparts | download images on. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 623x623</li> 
+    <mark>Spotify X Genius Announce Behind The Lyrics Hiphopdx </mark> Jak korzystać z rap genius?jak tworzyć własne adnotacje?
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://images.hindustantimes.com/tech/rf/image_size_960x540/HT/p2/2019/06/17/Pictures/paris-photo-google-logo-vivatech-seen-fair_c0d94d42-90be-11e9-8dac-d1dda9c8fec1.jpg"><img alt="Lyrics Website Genius Accuses Google Of Copying Its Content Can&#039;t find what you are looking for? lyrics website genius accuses google of" src="https://images.hindustantimes.com/tech/rf/image_size_960x540/HT/p2/2019/06/17/Pictures/paris-photo-google-logo-vivatech-seen-fair_c0d94d42-90be-11e9-8dac-d1dda9c8fec1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcV74fXvyYKPVfQ4GXW4foC6YRy9HKHBCSug&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>960x540 - &#039;ya tein&#039;, ya tein logo veneration logo. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 960x540</li> 
+    <mark>Lyrics Website Genius Accuses Google Of Copying Its Content </mark> The social media team at genius posts on instagram up to 20 times per day.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.pinimg.com/originals/aa/2d/03/aa2d03ef1f35df92c9051359bff622d2.jpg"><img alt="Smashing Pumpkins Superchrist Lyrics Genius Lyrics More Lyrics Lyrics Pumpkin 1200 x 630 jpeg 30 кб. pinterest" src="https://i.pinimg.com/originals/aa/2d/03/aa2d03ef1f35df92c9051359bff622d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQexzzHw7xFX9mIWoGjfDyunsj7fpsutnOCtQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>500x500 - The memes often take lyrics out of context for humorous effect. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 500x500</li> 
+    <mark>Smashing Pumpkins Superchrist Lyrics Genius Lyrics More Lyrics Lyrics Pumpkin </mark> Genius api only returns information (like artist name, link to the genius lyrics page.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://falseto.com/files/2019/12/genius.jpg"><img alt="Genius Says It Caught Google Stealing Lyrics In 50m Suit Can They Win Falseto Download free genius vector logo and icons in ai, eps, cdr, svg, png formats. falseto" src="https://falseto.com/files/2019/12/genius.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6QJakTc1GHjQGWFifn8SE2ptBV5IVTNADA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>520x245 - Submitted 1 year ago by felixatwood. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 520x245</li> 
+    <mark>Genius Says It Caught Google Stealing Lyrics In 50m Suit Can They Win Falseto </mark> If you aren&#039;t familiar with it, genius hosts a bunch of song lyrics and lets users what the genius api doesn&#039;t provide, however, is a way to download the lyrics themselves.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://routenote.com/blog/wp-content/uploads/2016/01/d8465f8c5906f540df63f7ff83e8aae6.640x360x30.gif"><img alt="Spotify Partner With Genius Lyrics Routenote Blog The memes often take lyrics out of context for humorous effect. spotify partner with genius lyrics" src="https://routenote.com/blog/wp-content/uploads/2016/01/d8465f8c5906f540df63f7ff83e8aae6.640x360x30.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScz8ucEr8MK_c_p32D0G2iyFpg4pD396AX-g&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>640x360 - Or hold your phone up to the music, tap the soundwave button (powered by acrcloud), and lo, the annotated lyrics appear. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 640x360</li> 
+    <mark>Spotify Partner With Genius Lyrics Routenote Blog </mark> Genius lyric messages are memes in which song lyrics from the genius website are superimposed over images.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://e7.pngegg.com/pngimages/533/366/png-clipart-genius-com-incorporated-internet-logo-lyrics-netscape-genius-angle-text.png"><img alt="Genius Com Incorporated Internet Logo Lyrics Netscape Genius Angle Text Png Pngegg How to make a genius video | official tutorial. genius com incorporated internet logo" src="https://e7.pngegg.com/pngimages/533/366/png-clipart-genius-com-incorporated-internet-logo-lyrics-netscape-genius-angle-text.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf91-V6NZCzyuqLNEWBeZIY4NM3kjYDHzE-g&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>900x122 - See more ideas about logos, logo design, graphic design logo. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 900x122</li> 
+    <mark>Genius Com Incorporated Internet Logo Lyrics Netscape Genius Angle Text Png Pngegg </mark> 3.0.6 • public • published 11 days ago.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.poynter.org/wp-content/uploads/2016/07/Genius.png"><img alt="How The Washington Post Is Using Genius To Explain The Twists And Turns Of A Crazy Election Poynter Browse thousands of lyrics logo brandcrowd logo maker is easy to use and allows you full customization to get the lyrics logo you. how the washington post is using genius" src="https://www.poynter.org/wp-content/uploads/2016/07/Genius.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Y7Wj6uhUzDfyBN2yjTT2levyvgKQYj_DOA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x630 - Song lyrics &amp; more and enjoy it on your iphone, ipad, and ipod touch. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x630</li> 
+    <mark>How The Washington Post Is Using Genius To Explain The Twists And Turns Of A Crazy Election Poynter </mark> See more ideas about logos, logo design, graphic design logo.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://yt3.ggpht.com/ytc/AAUvwnipMfsRprX79dBMpHc6paHsqDt7ielUrOcVqes6=s900-c-k-c0x00ffffff-no-rj"><img alt="Genius Lyrics Videos Youtube Submitted 1 year ago by felixatwood. genius lyrics videos youtube" src="https://yt3.ggpht.com/ytc/AAUvwnipMfsRprX79dBMpHc6paHsqDt7ielUrOcVqes6=s900-c-k-c0x00ffffff-no-rj" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS5TGdY5z-Rpj_ATG-t6W9XFiO3MkAAoDtPw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>900x900 - Let genius match lyrics with your songs on your favorite music services. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 900x900</li> 
+    <mark>Genius Lyrics Videos Youtube </mark> The social media team at genius posts on instagram up to 20 times per day.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://boldtv.org/wp-content/uploads/2017/07/3DBE02C1-56D7-49FF-A05D-CFC8F8513D13-11864-00000CCB13BC7985.jpeg"><img alt="Genius Logo Bold Tv Learn more about this api. bold tv" src="https://boldtv.org/wp-content/uploads/2017/07/3DBE02C1-56D7-49FF-A05D-CFC8F8513D13-11864-00000CCB13BC7985.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_ij37cidFKgVbjjA8sOaaHqlaK0mYJ2RfQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - &#039;axé&#039;, axé logo si no tiene logo, falta poco, saravaravá! </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Genius Logo Bold Tv </mark> The memes often take lyrics out of context for humorous effect.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i1.sndcdn.com/artworks-000241117556-03e8zv-t500x500.jpg"><img alt="Genius Lyrics And Instrumental By Takoma Smith 3 On Soundcloud Hear The World S Sounds Make a lyrics logo design online with brandcrowd&#039;s logo maker. soundcloud" src="https://i1.sndcdn.com/artworks-000241117556-03e8zv-t500x500.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOZbMvI15PHXB2yYSTDTBZqmmXhRXiw4X9Ew&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>500x500 - A javascript package that leverages genius api to search and fetch/scrape song lyrics and album art. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 500x500</li> 
+    <mark>Genius Lyrics And Instrumental By Takoma Smith 3 On Soundcloud Hear The World S Sounds </mark> Jak korzystać z rap genius?jak tworzyć własne adnotacje?
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://tse3.mm.bing.net/th?id=OIP.fIZ89z_LaexEGakkeN0TmgHaHK&amp;pid=15.1"><img alt="Sheek Logo Drone Fest Перевод песни genius — рейтинг: drone fest" src="https://tse3.mm.bing.net/th?id=OIP.fIZ89z_LaexEGakkeN0TmgHaHK&amp;pid=15.1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHBLJzQqSllxgn9FcD0yjPcCz-NCtwq6QG1A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>474x458 - How to make a genius video | official tutorial. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 474x458</li> 
+    <mark>Sheek Logo Drone Fest </mark> Kamzel] x2 nie słucham się was, idę ciągle swoją drogą nie wiem, co tam ubierasz, nie patrzę tobie na logo zamiast coś robić.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.nme.com/wp-content/uploads/2019/06/genius-lyrics-696x442.png"><img alt="Genius Uses Secret Code To Accuse Google Of Stealing Lyrics From Them Or hold your phone up to the music, tap the soundwave button (powered by acrcloud), and lo, the annotated lyrics appear. genius uses secret code to accuse" src="https://www.nme.com/wp-content/uploads/2019/06/genius-lyrics-696x442.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR36nj7DTmw-y0oElohtclhlNxyyYlLhcWrCw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>696x442 - How to make a lyric video in 5 minutes. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 696x442</li> 
+    <mark>Genius Uses Secret Code To Accuse Google Of Stealing Lyrics From Them </mark> &#039;ya tein&#039;, ya tein logo veneration logo.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://moteka.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/apink-naeun/">Apink Naeun : Ильхун (btob) и боми (apink).</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/apink-naeun-eung-eung/">Apink Naeun Eung Eung : Photo album containing 38 pictures of naeun.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bee-shaffer-wedding-dress-long-island/">Bee Shaffer Wedding Dress Long Island - Win a reading with theresa | long island medium.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/charli-cute-face/">Charli Cute Face / Submitted 5 months ago by atu01.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/charlotte-crosby-geordie-shore/">Charlotte Crosby Geordie Shore / From geordie shore to the charlotte show.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/daisy-edgar-jones-bangs/">Daisy Edgar Jones Bangs - Daisy edgar jones is a british actor who has been in part of shows like outnumbered and silent witness.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/latest-fashion-for-women/">Latest Fashion For Women / We also offer big and tall sizes for adults and extended sizes for kids.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/loreal-casting-creme-gloss-834/">Loreal Casting Creme Gloss 834 - L&amp;#039;oréal paris casting crème 600 gloss light brown.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/millie-bobby-brown-aesthetic-edit/">Millie Bobby Brown Aesthetic Edit / Check out this fantastic collection of millie bobby brown wallpapers, with 53 millie bobby brown background images for your desktop, phone or tablet.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/monique-lhuillier-cocktail-dresses/">Monique Lhuillier Cocktail Dresses - Shop ml monique lhuillier at lyst to discover a wide selection of the latest clothing, shoes and accessories.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Moteka.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
